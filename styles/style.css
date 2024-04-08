@@ -1,0 +1,147 @@
+:root {
+  --nutmeg: hsl(14, 45%, 36%);
+  --darkRaspberry: hsl(332, 51%, 32%);
+  --white: hsl(0, 0%, 100%);
+  --roseWhite: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --lightGrey: hsl(30, 18%, 87%);
+  --wengeBrown: hsl(30, 10%, 34%);
+  --darkCharcoal: hsl(24, 5%, 18%);
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: "Outfit";
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7.5rem 21.875rem 1rem 21.875rem;
+    background-color: var(--eggshell);
+    font-size: 1rem;
+    color: var(--wengeBrown);
+    box-sizing: border-box;
+  }
+
+  .container {
+    max-width: 46.25rem;
+    box-sizing: border-box;
+    padding: 2.5rem;
+    border-radius: 1.25rem;
+    background-color: var(--white);
+  }
+
+  .container img {
+    max-width: 41.25rem;
+    border-radius: 0.625rem;
+    margin-bottom: 2rem;
+  }
+
+  .divTime {
+    margin: 3.125rem 0 3.125rem;
+    background-color: var(--roseWhite);
+    border-radius: 1.25rem;
+    padding: 1.875rem 1.563rem;
+  }
+
+  ul {
+    padding-left: 1.5rem;
+  }
+
+  p,
+  ul {
+    margin-top: 1rem;
+  }
+  li {
+    padding: 1rem;
+  }
+
+  hr {
+    margin: 1.875rem 0;
+  }
+
+  h1 {
+    color: var(--darkCharcoal);
+  }
+
+  h1,
+  h2 {
+    font-family: "Young Serif";
+  }
+
+  h3 {
+    color: var(--darkRaspberry);
+  }
+  h2,
+  h4,
+  h5,
+  h6 {
+    color: var(--nutmeg);
+  }
+
+  td {
+    border-bottom: 0.063rem solid var(--lightGrey);
+    width: 20.625rem;
+    padding-left: 1.875rem;
+  }
+  table {
+    margin-top: 1.625rem;
+  }
+  .instructions {
+    list-style: decimal;
+    padding: 1rem;
+  }
+  .instructions li {
+    padding-left: 1.25rem;
+  }
+
+  .valorTabela {
+    font-weight: 700;
+    color: var(--nutmeg);
+  }
+
+  footer {
+    bottom: 0px;
+    margin-top: 10rem;
+    width: 100%;
+  }
+  .attribution {
+    font-size: 16px;
+    text-align: center;
+  }
+  .attribution a {
+    text-decoration: none;
+    font-weight: bold;
+    color: hsl(228, 45%, 44%);
+    &:hover {
+      color: var(--darkCharcoal);
+    }
+  }
+}
+
+@layer mobile {
+  @media (max-width: 375px) {
+    body {
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+    }
+    main {
+      padding: 2.5rem;
+    }
+    .container {
+      max-width: 23.438rem;
+
+      padding: 0;
+      border-radius: 0;
+    }
+    .container img {
+      max-width: 23.438rem;
+      margin: 0;
+    }
+  }
+}
